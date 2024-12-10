@@ -45,7 +45,7 @@ export default factories.createCoreController('api::hotmart.hotmart', ({ strapi 
 
       ctx.send(newUser);
     } catch (err) {
-      ctx.badRequest('An error occurred', { error: err.message });
+      ctx.badRequest(`An error occurred ${err.message}`);
     }
   },
 }));
