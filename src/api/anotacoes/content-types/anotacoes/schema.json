@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "minhas_anotacoes",
+  "info": {
+    "singularName": "anotacoes",
+    "pluralName": "minhas-anotacoes",
+    "displayName": "MinhasAnotacoes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "descricao": {
+      "type": "blocks"
+    },
+    "data": {
+      "type": "date"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
